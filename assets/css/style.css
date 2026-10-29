@@ -265,7 +265,7 @@ svg { width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor; s
   .hero__media::after { background: linear-gradient(90deg, var(--dark) 0%, rgba(14, 14, 16, .4) 30%, rgba(14, 14, 16, 0) 60%), linear-gradient(0deg, var(--dark) 0%, rgba(14, 14, 16, 0) 25%); }
   .hero__img { height: 100%; aspect-ratio: auto; }
   .hero__in { margin-top: 0; padding: 56px var(--gutter); }
-  .hero__text { max-width: 540px; }
+  .hero__text { max-width: 640px; }
   .hero__title { font-size: 44px; }
   .hero__sub { font-size: 18px; }
   .hero .btn { width: auto; }
