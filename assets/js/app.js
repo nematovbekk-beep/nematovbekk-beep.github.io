@@ -150,6 +150,13 @@
     window.track('call_click', p);
   });
 
+  /* ---------------- переход на основной сайт ---------------- */
+  document.querySelectorAll('[data-site]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      window.track && window.track('main_site_click', { model: window.MODEL, place: a.getAttribute('data-site') });
+    });
+  });
+
   /* ---------------- видео (грузится только по клику) ---------------- */
   document.querySelectorAll('[data-yt]').forEach(function (b) {
     b.addEventListener('click', function () {

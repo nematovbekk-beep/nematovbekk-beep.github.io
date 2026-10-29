@@ -65,6 +65,7 @@ svg { width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor; s
 /* ---------- шапка ---------- */
 .top { position: sticky; top: 0; z-index: 50; background: rgba(14, 14, 16, .92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); color: #fff; }
 .top__in { height: var(--top-h); display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.top__home { display: block; line-height: 0; }
 .top__logo { width: 150px; height: auto; }
 .top__right { display: flex; align-items: center; gap: 10px; }
 .top__call { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: var(--red); color: #fff; text-decoration: none; font-weight: 700; }
