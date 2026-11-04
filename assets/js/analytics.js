@@ -42,7 +42,10 @@
     try {
       window.dataLayer.push(Object.assign({ event: event }, params));
       if (window.gtag && !S.gtm_id) window.gtag('event', event, params);
-      if (window.fbq && event === 'call_click') window.fbq('track', 'Contact', params);
+      if (window.fbq) {
+        if (event === 'call_click') window.fbq('track', 'Contact', params);
+        else window.fbq('trackCustom', event, params);
+      }
       if (window.ym && S.ym_id) window.ym(S.ym_id, 'reachGoal', event, params);
     } catch (e) { /* аналитика не должна ломать страницу */ }
   };
