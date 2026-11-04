@@ -290,7 +290,7 @@ svg { width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor; s
   .compare th, .compare td { padding: 14px 18px; }
   .final { padding: 80px 0; }
   .final .btn { width: auto; }
-  .addr { grid-template-columns: repeat(4, 1fr); }
+  .addr { grid-template-columns: repeat(5, 1fr); gap: 20px; }
 }
 
 /* ---------- чат ---------- */
